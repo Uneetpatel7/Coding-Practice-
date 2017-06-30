@@ -31,8 +31,7 @@ void Generate_Square(int n){
 		counter++;
 	}
 
-printf("The Magic Square for n=%d:\nSum of each row or column %d:\n\n",
-			n, n*(n*n+1)/2);
+	cout<<"The Magic Square for n=%d:"<<endl;
 	for(int x=0; x<n; x++)
 	{
 		for(int y=0; y<n; y++)
