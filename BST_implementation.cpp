@@ -1,3 +1,12 @@
+/*Read a randomly ordered sequence of integers and store them in a doubly linked list. 
+Use in-place insertion sort to sort the elements of the linked list. 
+Now convert this list into a binary search tree with minimum height possible. 
+Write another program to test whether a given tree is BST or not. 
+Use this program to test the correctness of your previous program, 
+i.e., whether or not the binary tree you have constructed is a BST.
+*/
+
+
 #include<iostream>
 #include<vector>
 #include<fstream>
