@@ -6,28 +6,26 @@ using namespace std;
 void traverse_spiral(int arr[4][4]){
     int n=4;
     int x1=0, x2=n-1, y1=0, y2= n-1;
-    //x1 and x2 are the left and right bound to of traversal respectively
-    //y1 and y2 are the upper and lower bound of the traversal respectively
     int i=0; int j=0;
     while (x1<x2 && y1<y2){
         
         for ( j=y1; j<=y2; j++ ){
-            cout<<arr[i][j]<<" ";    
+            cout<<arr[i+1][j]<<" ";    
         }
-        
+        //cout << j <<endl;
         for ( i=x1+1 ; i<=x2 ; i++){
-            cout<<arr[i][j]<<" ";
+            cout<<arr[i][j-1]<<" ";
         }
         
         for (j= y2-1; j>=y1; j--){
-            cout<<arr[i][j]<<" ";
+            cout<<arr[i-1][j]<<" ";
         }
-        
+       // cout << i << j << "hey " <<endl;
         for (i= x2-1; i>x1; i--){
-            cout<<arr[i][j]<<" ";
+            cout<<arr[i][j+1]<<" ";
         }
-    x1++; //moving left bound one step right
-    x2--; //moving right bound one step left
+    x1++;
+    x2--;
     y1++;
     y2--;
     }
@@ -50,6 +48,6 @@ int main() {
         	}
         	
         	traverse_spiral(arr);
-        	
+        	cout<< endl;
     	}
 }
