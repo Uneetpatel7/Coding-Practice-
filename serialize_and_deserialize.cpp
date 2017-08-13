@@ -20,6 +20,7 @@ void serialize(Node *root,vector<int> &A)
 {
     if (root == NULL){
         A.push_back(-1);
+       return ;
     }
     
     A.push_back(root->data);
